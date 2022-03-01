@@ -6,9 +6,8 @@ Describes basic security processes.
 
 1. Overview
 
-   1. Summary
-   2. OWASP resources walkthrough
-   3. Training materials
+   1. OWASP resources walkthrough
+   2. Training materials
 
 2. Workshops
 

@@ -6,7 +6,7 @@ Resources:
 
 Securing your applications against today’s cyber threats means facing a veritable jungle of products, services, and solutions - don’t leave home without a map.
 
-This List outlines best practices to secure your applications.
+This List outlines best practices to secure your applications or do the opposite of https://zeltser.com/suck-at-security-cheat-sheet/.
 
 Application security is a continuous journey. To do it effectively means building security into your software development life cycle without slowing down delivery times - turn this list into an action plan.
 
