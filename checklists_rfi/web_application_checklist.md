@@ -15,7 +15,6 @@ Depending on the web application / service, questions can be added or removed.
 | Question                                                                              | Answer | Interview notes |
 | ------------------------------------------------------------------------------------- | ------ | --------------- |
 | What is the application's primary business purpose?                                   |        |                 |
-| How will the application make money?                                                  |        |                 |
 | What are the planned business milestones for developing or improving the application? |        |                 |
 | What key benefits does the application offer its users?                               |        |                 |
 | What business continuity provisions have been defined for the application?            |        |                 |
@@ -72,9 +71,7 @@ Depending on the web application / service, questions can be added or removed.
 | --------------------------------------------------------------------------------------------- | ------ | --------------- |
 | What details regarding routing, switching, firewalling, and load-balancing have been defined? |        |                 |
 | What network design supports the application?                                                 |        |                 |
-| What core network devices support the application?                                            |        |                 |
 | What network performance requirements exist?                                                  |        |                 |
-| What private and public network links support the application?                                |        |                 |
 
 ### Systems
 
@@ -153,7 +150,6 @@ Depending on the web application / service, questions can be added or removed.
 | ------------------------------------------------------------------------------------------------- | ------ | --------------- |
 | What application design review practices have been defined and executed?                          |        |                 |
 | How is intermediate or in-process data stored in the application components' memory and in cache? |        |                 |
-| How many logical tiers group the application's components?                                        |        |                 |
 | What staging, testing, and Quality Assurance requirements have been defined?                      |        |                 |
 | Do you use shared security services?                                                              |        |                 |
 
@@ -179,7 +175,6 @@ Depending on the web application / service, questions can be added or removed.
 | How do administrators access production infrastructure to manage it?                                 |        |                 |
 | What physical controls restrict access to the application's components and data?                     |        |                 |
 | What is the process for granting access to the environment hosting the application?                  |        |                 |
-| Do you use repeatable deployment processes?                                                          |        |                 |
 
 ### Change Management
 
@@ -189,6 +184,7 @@ Depending on the web application / service, questions can be added or removed.
 | How are changes to the infrastructure controlled?                          |        |                 |
 | How is code deployed to production?                                        |        |                 |
 | What mechanisms exist to detect violations of change management practices? |        |                 |
+| Do you use repeatable deployment processes?                                |        |                 |
 
 ### Software Development
 
