@@ -114,7 +114,7 @@ Depending on the web application / service, questions can be added or removed.
 
 | Question                                                                                         | Answer | Interview notes |
 | ------------------------------------------------------------------------------------------------ | ------ | --------------- |
-| What data entry paths does the application support?                                              |        |                 |
+| What data entry / input paths does the application support?                                              |        |                 |
 | What data output paths does the application support?                                             |        |                 |
 | How does data flow across the application's internal components?                                 |        |                 |
 | What data input validation requirements have been defined?                                       |        |                 |
