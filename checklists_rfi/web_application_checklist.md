@@ -8,7 +8,7 @@ Questions about the initial design and review of a complex Internet application'
 
 Depending on the web application / service, questions can be added or removed.
 
-## Business Requirements
+## Business
 
 ### Business Model
 
@@ -63,7 +63,7 @@ Depending on the web application / service, questions can be added or removed.
 | What auditing and compliance regulations apply?                  |        |                 |
 | What policies, standards, or regulations are you compliant with? |        |                 |
 
-## Infrastructure Requirements
+## Infrastructure
 
 ### Network
 
@@ -97,7 +97,7 @@ Depending on the web application / service, questions can be added or removed.
 | What virtualization requirements have been defined for the application?             |        |                 |
 | What aspects of the product may or may not be hosted via the cloud computing model? |        |                 |
 
-## Application Requirements
+## Application
 
 ### Environment
 
@@ -154,7 +154,7 @@ Depending on the web application / service, questions can be added or removed.
 | What staging, testing, and Quality Assurance requirements have been defined?                      |        |                 |
 | Do you use shared security services?                                                              |        |                 |
 
-## Security Program Requirements
+## Security Program
 
 ### Application Risk Profile
 
