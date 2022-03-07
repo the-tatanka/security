@@ -172,6 +172,9 @@ Depending on the web application / service, questions can be added or removed.
 | What is the process for identifying and addressing vulnerabilities in network and system components? |        |                 |
 | What access to system and network administrators have to the application's sensitive data?           |        |                 |
 | What security incident requirements have been defined?                                               |        |                 |
+| Does the application / component contain a backup?                              |        |                 |
+| Where are the backups stored?                                 |        |                 |
+| What measures are taken to ensure the integrity of the backups?            |    |    |
 | How do administrators access production infrastructure to manage it?                                 |        |                 |
 | What physical controls restrict access to the application's components and data?                     |        |                 |
 | What is the process for granting access to the environment hosting the application?                  |        |                 |
