@@ -143,6 +143,7 @@ Depending on the web application / service, questions can be added or removed.
 | What application security monitoring requirements have been defined?        |        |                 |
 | What application error handling and logging requirements have been defined? |        |                 |
 | How are audit and debug logs accessed, stored, and secured?                 |        |                 |
+| Can all actions be traced back to a specific user?                    |        |                 |
 
 ### Application Design
 
