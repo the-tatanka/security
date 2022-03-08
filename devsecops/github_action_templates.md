@@ -134,6 +134,10 @@ To identify pre-bundled dependencies, use Container Scanning.
 
 - https://github.com/jeremylong/DependencyCheck
 
+- Github action: https://github.com/dependency-check/Dependency-Check_Action
+
+- OWASP Dependency Check command line arguments (action calls Docker container from OWASP Dependency Check): https://jeremylong.github.io/DependencyCheck/dependency-check-cli/arguments.html
+
 ```
   dependency-check:
     runs-on: ubuntu-latest
