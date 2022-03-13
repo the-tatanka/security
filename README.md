@@ -20,13 +20,7 @@ Describes basic security processes.
    1. Web application checklist
    2. IoT checklist
 
-4. Threat modeling
-
-   1. Writing a good diagram
-   2. STRIDE
-   3. STRIDE-per-element
-   4. Rules of thumb
-   5. Security concept / assessment report
+4. Assessments
 
 5. DevSecOps
 

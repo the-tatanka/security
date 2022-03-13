@@ -6,7 +6,15 @@ Resources:
 
 You threat model to identify threats to your component, which then lets you know where you need to concentrate your resources.
 
-<b>It doesn't solve the problem.</b>
+<b>It doesn't solve the problem.</b> The threats and risks are not solved until they are eliminated.
+
+Two threat modeling techniques are described:
+
+- Security assessment: Detailed security assessment
+
+- Rapid assessment: Very rapidly performed security assessment when there is no time or resources available for a detailed security assessment
+
+The same risk methodology can be used for both assessments.
 
 ## Rules of thumb
 
