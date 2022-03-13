@@ -24,7 +24,7 @@ What goes into the security assessment report:
 
    2. Data: List the kind of data that will be processed or stored with data classification
 
-5. Threat Analysis - For each threat that you call out in the threat analysis, you should include the associated mitigation (add issue number of threat or mitigation)
+5. Threat analysis (using STRIDE)
 
    1. Data flows
 
@@ -35,6 +35,10 @@ What goes into the security assessment report:
    4. Processes
 
    \*(Data elements do not have threats because Data is not attacked directly, instead the elements that process Data are attacked)
+
+6. Risk analysis - For each threat
+
+7. Risk treatment - For each risk with the treatment option "reduce", you should include the associated mitigation (add issue number of threat or mitigation)
 
 Every time your threat model indicates that you have a need to mitigate a particular threat, you need to file at least one issue. The first issue goes to the developer to ensure that the developer implements the mitigation called out in the threat model(, and a second issue goes to a tester to ensure that the tester writes tests to verify the mitigation).
 

@@ -1,4 +1,4 @@
-# Rapid Assessment
+# Rapid assessment
 
 Resources:
 
@@ -8,7 +8,7 @@ Resources:
 
 Often there is no time or resources available for a detailed security assessment.
 
-Therefore, an security assessment is needed that can be performed very rapidly.
+Therefore, an security assessment is needed that can be performed very <b>rapidly</b>.
 
 The most important assets in an application / service are the data. That is why this approach is based on the data processed, stored or simply accessible by services.
 
@@ -57,3 +57,23 @@ Examples are:
 |           |                |          |
 
 Set the data classification for each data - see data classification metric.
+
+## Threats
+
+Discuss potential threats and figure out how bad things could go (worse-case scenario).
+
+Do not record the threat types, attacker types, etc. in this model in order to save time. Think about the easiest attack vectors.
+
+A CIA per data approach is used:
+
+- Affecting confidentiality
+
+- Affecting integrity
+
+- Affecting availability
+
+## Risks
+
+For the identified threats, the same approach as for the detailed security assessment can be used to assess the risk.
+
+Likelihood and impact are determined to get the corresponding risk. The risk is determined in this way for each threat.
