@@ -85,3 +85,11 @@ The Commitizen tool is used to create quality commit messages. Commitizen must b
 - npm install commitizen -g
 
 - Initialize project to use the cz-conventional-changelog: commitizen init cz-conventional-changelog --save-dev --save-exact
+
+## Block main / master branch
+
+The main / master branches must be blocked. You are only allowed to commit to them if all security checks of the actions are successful.
+
+The actions can be configured to run for each pull request.
+
+This ensures that all security checks are checked before the release of the main/master branch takes place.

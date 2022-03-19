@@ -36,17 +36,17 @@ More or less, all models include these phases: Planning, Coding, Building, Testi
 
 - <b>Peer reviews</b> - Protect the master/main branch and perform peer reviews through the pull requests.
 
-- <b>IDE Security plugins</b> - are not worth the trouble (my opinion). Some of them check for secure coding standards.
+- <b>IDE Security plugins</b> - Are not worth the trouble (my opinion). Some of them check for secure coding standards.
 
 ### Building & Testing
 
-- <b>Upload build artifact</b>
+- <b>Upload build artifact</b> - If security vulnerabilities enter production, it must be possible to trace where the error originated. And so that rollbacks can be carried out.
 
 - <b>Static Application Security Testing (SAST)</b> - Analyze source code to find security vulnerabilities that make your organization’s applications susceptible to attack. Address security and quality defects in code while it is being developed, helping you accelerate development an increase overall security and quality.
 
 - <b>Software Composition Analysis (SCA)</b> - Secure and manage open source risks in applications and containers. Manage security, quality, and license compliance risk that comes from the use of open source and third-party code in applications and containers.
 
-- <b>Secret scanning</b>
+- <b>Secret scanning</b> - If your project communicates with an external service, you might use a token or private key for authentication. Tokens and private keys are examples of secrets that a service provider can issue. If you check a secret into a repository, anyone who has read access to the repository can use the secret to access the external service with your privileges. Secret scanning will scan your entire Git history on all branches present in your repository for secrets. Run the secret scanning as a pre-commit hook to prevent the secrets from entering the repository.
 
 ### Release & Deploy
 
