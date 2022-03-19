@@ -50,9 +50,7 @@ More or less, all models include these phases: Planning, Coding, Building, Testi
 
 ### Release & Deploy
 
-- <b>Infrastructure as Code (IaC)</b> - Also known as software-defined infrastructure, allows the configuration and deployment of infrastructure components faster with consistency by allowing them to be defined as a code and also enables repeatable deployments across environments.
-
-- <b>Compliance as Code (CaC)</b> - Building compliance into development and operations, and checks into Continuous Delivery so that regulatory compliance becomes an integral part.
+- <b>Infrastructure as Code (IaC) Scanning</b> - Also known as software-defined infrastructure, allows the configuration and deployment of infrastructure components faster with consistency by allowing them to be defined as a code and also enables repeatable deployments across environments.
 
 - <b>Release management</b>
 
