@@ -12,7 +12,7 @@ Currently, <b>KICS</b> scanning supports configuration files for Ansible, AWS Cl
 
 1. Enable code scanning in your repository.
 
-2. Creat a new workflow named "kics.yml" in your ".github/workflows" directory.
+2. Create a new workflow named "kics.yml" in your ".github/workflows" directory.
 
 3. Paste the example KICS action below.
 

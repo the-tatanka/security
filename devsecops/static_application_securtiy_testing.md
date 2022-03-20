@@ -12,7 +12,7 @@
 
 1. Enable code scanning in your repository.
 
-2. Creat a new workflow named "semgrep.yml" in your ".github/workflows" directory.
+2. Create a new workflow named "semgrep.yml" in your ".github/workflows" directory.
 
 3. Paste the example Semgrep action below.
 

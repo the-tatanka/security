@@ -4,8 +4,66 @@
 
 Add a gitleaks.toml file to configure secret patterns and to allow secrets ("[allowlist]").
 
+It is not possible to format the results of the gitleaks action to SARIF. Gitleaks itself supports this - not the GitHub action.
+
+- https://github.com/zricethezav/gitleaks
+
+- Gitleaks Github action: https://github.com/zricethezav/gitleaks-action
+
+## Integration
+
+1. Enable code scanning in your repository.
+
+2. Create a new workflow named "gitleaks.yml" in your ".github/workflows" directory.
+
+3. Paste the example Gitleaks action below.
+
+4. Create a new file named "gitleaks.toml" in your ".github/" directory.
+
+5. Azure is not supported currently. They are not included in the gitleaks default config, so if Azure is used, a config file must be used and the Azure patterns added. Azure patterns are not included in the following config file.
+
+```
+# For most projects, this workflow file will not need changing; you simply need
+# to commit it to your repository.
+#
+#
+name: "Gitleaks"
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    # The branches below must be a subset of the branches above
+    branches: [ main, master ]
+    paths-ignore:
+      - '**/*.md'
+      - '**/*.txt'
+  schedule:
+    - cron: '28 15 * * 3'
+
+jobs:
+  analyze:
+    name: Analyze
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+      with:
+          fetch-depth: "0"
+
+    - name: Gitleaks scan
+      uses: zricethezav/gitleaks-action@master
+      with:
+        config-path: .github/gitleaks.toml
+```
+
 <details>
-  <summary>See gitleaks.toml example</summary>
+  <summary>See gitleaks config example "gitleaks.toml":</summary>
   
     ```
     title = "gitleaks config"
@@ -564,35 +622,9 @@ Add a gitleaks.toml file to configure secret patterns and to allow secrets ("[al
 
 </details>
 
-- https://github.com/zricethezav/gitleaks
+### Local gitleaks installation
 
-- Gitleaks Github action: https://github.com/zricethezav/gitleaks-action
-
-```
-  secret-scanning:
-    runs-on: ubuntu-latest
-    needs: [Build]
-    steps:
-      - uses: actions/checkout@v2
-        with:
-          fetch-depth: "0"
-
-      - name: Detect secrets
-        id: detectSecrets
-        uses: zricethezav/gitleaks-action@master
-        continue-on-error: true
-        with:
-          config-path: gitleaks.toml
-
-      - name: Check on failures
-        if: steps.detectSecrets.outcome != 'success'
-        uses: actions/github-script@v3
-        with:
-          script: |
-            core.setFailed('Detected code secrets')
-```
-
-Local gitleaks installation:
+Run the secret scanning as a pre-commit hook to prevent the secrets from entering the repository. Once a secret is in the repository, it takes a lot of effort to remove it from the commit history.
 
 1. Clone repo https://github.com/zricethezav/gitleaks
 
@@ -601,3 +633,23 @@ Local gitleaks installation:
 3. Create executalbe with "make build"
 
 4. Copy gitleaks executable to /usr/local/bin (on debian based systems)
+
+## Results evaluation
+
+All findings MUST be fixed immediately.
+
+The findings can NOT be seen at GitHub Security / Code scanning alerts.
+
+Steps for the fix:
+
+1. The secret must be deleted from the code - commits / branches / pull requests must be deleted. A rebase of the envolved branches is necessary.
+
+2. Secret must not be used anymore.
+
+3. Secret must be revoked or destroyed.
+
+4. A new secret must be created.
+
+5. This new secret must be kept secure, for example via Github Secret Manager.
+
+False positives can be listed as findings.
