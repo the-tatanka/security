@@ -8,20 +8,50 @@ Currently, <b>KICS</b> scanning supports configuration files for Ansible, AWS Cl
 
 - KICS Github action: https://github.com/Checkmarx/kics-github-action
 
+## Integration
+
+1. Enable code scanning in your repository.
+
+2. Creat a new workflow named "kics.yml" in your ".github/workflows" directory.
+
+3. Paste the example KICS action below.
+
+4. KICS must be shown the paths to IaC files to be scanned. Add them to the action under "path:".
+
 ```
-name: KICS IaC Scan
+# For most projects, this workflow file will not need changing; you simply need
+# to commit it to your repository.
+#
+# You may wish to alter this file to override the set of languages analyzed,
+# or to provide custom queries or build logic.
+#
+name: "KICS"
 
 on:
+  push:
+    branches: [ main, master ]
   pull_request:
+    # The branches below must be a subset of the branches above
+    branches: [ main, master ]
+    paths-ignore:
+      - '**/*.md'
+      - '**/*.txt'
+  schedule:
+    - cron: '28 15 * * 3'
 
 jobs:
-  test:
+  analyze:
+    name: Analyze
     runs-on: ubuntu-latest
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
 
     steps:
     - uses: actions/checkout@v2
 
-    - name: run kics Scan
+    - name: KICS scan
       uses: checkmarx/kics-github-action@v1.3
         with:
           # Scanning two directories: ./terraform/ ./cfn-templates/ plus a single file
@@ -45,9 +75,20 @@ jobs:
     - name: Display kics results
       run: |
         cat kicsResults/results.json
+      if: always()
 
-    - name: Upload SARIF file
-        uses: github/codeql-action/upload-sarif@v1
-        with:
-          sarif_file: kicsResults/results.sarif
+    # Upload findings to GitHub Advanced Security Dashboard
+    - name: Upload SARIF file for GitHub Advanced Security Dashboard
+      uses: github/codeql-action/upload-sarif@v1
+      with:
+        sarif_file: kicsResults/results.sarif
+      if: always()
 ```
+
+## Results evaluation
+
+High findings must be fixed as soon as possible.
+
+The findings can be seen at GitHub Security / Code scanning alerts.
+
+False positives can be listed as findings. Therefore, an evaluation of the findings is required. In most cases expert knowledge regarding the used software is necessary.
