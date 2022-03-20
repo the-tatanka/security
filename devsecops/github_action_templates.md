@@ -93,3 +93,33 @@ The main / master branches must be blocked. You are only allowed to commit to th
 The actions can be configured to run for each pull request.
 
 This ensures that all security checks are checked before the release of the main/master branch takes place.
+
+## Toolchain
+
+This section lists the used security tools. It describes how to integrate the tools and how the results should be evaluated.
+
+The Github Advanced Security Features will be used. These features are enabled for all public repositories or by purchasing a Github Advanced Security license (=> Github Enterprise license).
+
+The GitHub Advanced Security Features do not have to be used in order to use the presented GitHub Actions.
+
+However, the use of the Advanced Security Features is recommended in order to use the GitHub Advanced Security Dashboard / SARIF.
+
+The results of allmost all used tools can be displayed in this dashboard. So there is no need to use separate reports or web UIs to see the findings.
+
+This has the consequence that the overhead is extremely reduced and the developer friendliness is increased, which in turn leads to more security.
+
+GitHub Actions for the following tools are available:
+
+- Static Application Security Sesting (SAST): Semgrep
+
+- Software Composition Analysis: OWASP Dependency-Check
+
+- Secret scanning: Gitleaks
+
+- Infrastructure as Code scanning: Semgrep, KICS
+
+- Licence compliance scanning: CycloneDX
+
+- Dynamic Application Security Testing (DAST): OWASP Zed Attack Proxy
+
+- Fuzzing: wfuzz

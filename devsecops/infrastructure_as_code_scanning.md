@@ -1,4 +1,4 @@
-## Infrastructure as Code (IaC) Scanning
+## Infrastructure as Code (IaC) scanning
 
 Currently, <b>KICS</b> scanning supports configuration files for Ansible, AWS Cloudformation, Azure Resource Manager, Dockerfile, Google Deployment Manager, Kubernetes, OpenAPI, Terraform, and Helm.
 
