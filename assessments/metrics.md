@@ -2,14 +2,22 @@
 
 This section contains all metrics which are used during the assessment.
 
+## RRA Status
+
+| Level     | Description                                                                                                                 |
+| --------- | --------------------------------------------------------------------------------------------------------------------------- |
+| Ready     | Means the document is ready for user consumption and is expected to be followed.                                            |
+| Draft     | Means the document is in progress or does not cover all cases. You may follow this document for guidance, at your own risk. |
+| Not Ready | Means the document should not be followed right now.                                                                        |
+
 ## Data classification
 
-| Data classification      | Description                                                                                                                                                                                                                                                                                          |
-| ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Public                   | Non-confidential data.                                                                                                                                                                                                                                                                               |
-| Staff Confidential       | Staff only <ul><li>Information shared in internal meetings</li><li>Documentation on a wiki</li><li>Source code</li></ul>                                                                                                                                                                             |
-| Groups Confidential      | Specific work groups only <ul><li>Service passwords/credentials</li><li>Proprietary or protected information, code, libraries from partners</li><li>Contracts or legal documents</li><li>Unannounced communication materials (dates, visuals, plans) for campaigns, product launches, etc.</li></ul> |
-| Individuals Confidential | Specific individuals only <ul><li>Release signing keys</li><li>Specific partner conversations</li><li>Employee bank account information</li><li>User/personal passwords/credentials</li></ul>                                                                                                        |
+| Data classification     | Description                                                                                                                                                                                                                                                                                          |
+| ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Public                  | Non-confidential data.                                                                                                                                                                                                                                                                               |
+| Staff Confidential      | Staff only <ul><li>Information shared in internal meetings</li><li>Documentation on a wiki</li><li>Source code</li></ul>                                                                                                                                                                             |
+| Workgroup Confidential  | Specific work groups only <ul><li>Service passwords/credentials</li><li>Proprietary or protected information, code, libraries from partners</li><li>Contracts or legal documents</li><li>Unannounced communication materials (dates, visuals, plans) for campaigns, product launches, etc.</li></ul> |
+| Individual Confidential | Specific individuals only <ul><li>Release signing keys</li><li>Specific partner conversations</li><li>Employee bank account information</li><li>User/personal passwords/credentials</li></ul>                                                                                                        |
 
 ## Imapct
 
