@@ -22,6 +22,9 @@ Describes basic security processes.
 
 4. Assessments
 
+   1. Security Assessment
+   2. Rapid Risk Assessment
+
 5. DevSecOps
 
    1. Security in the SDLC
