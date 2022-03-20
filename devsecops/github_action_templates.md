@@ -100,7 +100,7 @@ This section lists the used security tools. It describes how to integrate the to
 
 The Github Advanced Security Features will be used. These features are enabled for all public repositories or by purchasing a Github Advanced Security license (=> Github Enterprise license).
 
-The GitHub Advanced Security Features do not have to be used in order to use the presented GitHub Actions.
+The GitHub Advanced Security Features do not have to be used in order to use the presented GitHub Actions (skip integration step one and remove the upload SARIF step).
 
 However, the use of the Advanced Security Features is recommended in order to use the GitHub Advanced Security Dashboard / SARIF.
 
@@ -116,7 +116,9 @@ GitHub Actions for the following tools are available:
 
 - Secret scanning: Gitleaks
 
-- Infrastructure as Code scanning: Semgrep, KICS
+- Infrastructure as Code scanning: Semgrep, KICS, Trivy
+
+- Container scanning: Trivy
 
 - Licence compliance scanning: CycloneDX
 

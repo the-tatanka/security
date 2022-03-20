@@ -2,7 +2,11 @@
 
 Currently, <b>KICS</b> scanning supports configuration files for Ansible, AWS Cloudformation, Azure Resource Manager, Dockerfile, Google Deployment Manager, Kubernetes, OpenAPI, Terraform, and Helm.
 
-<b>Semgrep also has IaC capabilities.</b> The corresponding semgrep packages must be configured, see SAST semgrep section.
+<b>Semgrep also has IaC capabilities.</b> The corresponding Semgrep packages must be configured, see SAST Semgrep section.
+
+Trivy and Checkcov can also be used.
+
+Before choosing one of the tools, it should be noted that all of the listed ones identify the high findings. It is best to use a tool that is already in use (probably Trivy or Semgrep).
 
 - https://kics.io/
 
