@@ -30,6 +30,9 @@
 # Without user customization, Semgrep refers to the following to define ignored files and folders:
 # https://semgrep.dev/docs/ignoring-files-folders-code/#understanding-semgrep-defaults
 #
+# Exit codes: https://semgrep.dev/docs/semgrep-ci/overview/#exit-codes
+# Fails on severity "Error".
+#
 name: "Semgrep"
 
 on:
