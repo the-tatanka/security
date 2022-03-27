@@ -26,6 +26,9 @@
 #
 # You may wish to alter this file to override the set of languages analyzed,
 # or to provide custom queries or build logic.
+# 
+# Without user customization, Semgrep refers to the following to define ignored files and folders:
+# https://semgrep.dev/docs/ignoring-files-folders-code/#understanding-semgrep-defaults
 #
 name: "Semgrep"
 
